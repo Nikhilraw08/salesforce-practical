@@ -12,15 +12,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Contact__c</field>
+                <field>Width_In__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Address__c</field>
+                <field>Height_in__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Calculated_SqFt__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Primary__c</field>
+                <field>House__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -60,15 +64,9 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
-    </relatedLists>
-<<<<<<< HEAD
-=======
-    <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Window__c.House__c</relatedList>
+        <relatedList>Indow__c.Window__c</relatedList>
     </relatedLists>
->>>>>>> assignment upload
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

@@ -15,6 +15,11 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>House__c</tabs>
+<<<<<<< HEAD
+=======
+    <tabs>Indow__c</tabs>
+    <tabs>Window__c</tabs>
+>>>>>>> assignment upload
     <uiType>Lightning</uiType>
     <utilityBar>Indow_UtilityBar</utilityBar>
 </CustomApplication>

@@ -18,6 +18,7 @@ public without sharing class contactHouse_test {
         System.assertEquals(1, c.Number_of_Houses__c); //check that the contact shows that it has 1 house
         
         
+<<<<<<< HEAD
         // SECTION 2 (uncomment when section 1 is complete)
         // House__c house2 = new House__c(Name='2', Contact__c=c.Id); //new house
         // insert house2; //insert our second house
@@ -40,6 +41,30 @@ public without sharing class contactHouse_test {
         
         // System.assertEquals(0, houses.Size()); //check that there are 2 houses related to the contact
         // System.assertEquals(0, c.Number_of_Houses__c); //check that the contact shows that it has 2 houses
+=======
+        //SECTION 2 (uncomment when section 1 is complete)
+        House__c house2 = new House__c(Name='2', Contact__c=c.Id); //new house
+        insert house2; //insert our second house
+        
+        houses = new list<House__c>([select Id, Contact__c, Primary__c, Address__c from House__c where Contact__c = :c.Id]); //refresh the list of houses
+        System.debug(houses);
+        c = [select id, Number_of_Houses__c, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry from Contact where Id = :c.id limit 1]; //refresh the contact
+        System.debug(c);
+                
+        System.assertEquals(2, houses.Size()); //check that there are 2 houses related to the contact
+        System.assertEquals(2, c.Number_of_Houses__c); //check that the contact shows that it has 2 houses
+        
+        // SECTION 3 (uncomment when sections 1 and 2 are complete)
+        delete houses; //delete all of the houses
+        
+        houses = new list<House__c>([select Id, Contact__c, Primary__c, Address__c from House__c where Contact__c = :c.Id]); //refresh the list houses
+        System.debug(houses);
+        c = [select id, Number_of_Houses__c, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry from Contact where Id = :c.id limit 1]; //refresh the contact
+        System.debug(c);
+        
+         System.assertEquals(0, houses.Size()); //check that there are 2 houses related to the contact
+         System.assertEquals(0, c.Number_of_Houses__c); //check that the contact shows that it has 2 houses
+>>>>>>> assignment upload
         
         Test.stopTest();
     }

@@ -149,6 +149,11 @@
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <layoutColumns/>
+<<<<<<< HEAD
+=======
+        <layoutColumns/>
+        <layoutColumns/>
+>>>>>>> assignment upload
         <style>CustomLinks</style>
     </layoutSections>
     <quickActionList>
@@ -252,6 +257,13 @@
         <fields>NAME</fields>
         <relatedList>House__c.Contact__c</relatedList>
     </relatedLists>
+<<<<<<< HEAD
+=======
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Indow__c.Contact__c</relatedList>
+    </relatedLists>
+>>>>>>> assignment upload
     <relatedObjects>AccountId</relatedObjects>
     <runAssignmentRulesDefault>false</runAssignmentRulesDefault>
     <showEmailCheckbox>true</showEmailCheckbox>
